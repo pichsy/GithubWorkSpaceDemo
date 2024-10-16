@@ -7,7 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(repos => {
             repos.forEach(repo => {
                 const listItem = document.createElement('li');
-                listItem.textContent = repo.name;
+                listItem.innerHTML = `
+                    <h3>${repo.name}</h3>
+                    <p>${repo.description}</p>
+                    <img src="https://via.placeholder.com/150" alt="${repo.name}">
+                `;
                 repoList.appendChild(listItem);
 
                 if (repo.name === 'xwidget') {
