@@ -11,11 +11,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 repoList.appendChild(listItem);
 
                 if (repo.name === 'xwidget') {
-                    xwidgetSection.textContent = `Repository Name: ${repo.name}
-                    Description: ${repo.description}
-                    Stars: ${repo.stargazers_count}
-                    Forks: ${repo.forks_count}
-                    Language: ${repo.language}`;
+                    xwidgetSection.innerHTML = `
+                        <strong>Repository Name:</strong> ${repo.name}<br>
+                        <strong>Description:</strong> ${repo.description}<br>
+                        <strong>Stars:</strong> ${repo.stargazers_count}<br>
+                        <strong>Forks:</strong> ${repo.forks_count}<br>
+                        <strong>Language:</strong> ${repo.language}<br>
+                        <a href="${repo.html_url}" target="_blank">View on GitHub</a>
+                    `;
                 }
             });
         })

@@ -68,3 +68,26 @@ li:hover {
         opacity: 1;
     }
 }
+
+#repositories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+#xwidget {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    animation: highlight 2s ease-in-out;
+}
+
+@keyframes highlight {
+    from {
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+    }
+    to {
+        background: linear-gradient(to right, #2575fc, #6a11cb);
+    }
+}
