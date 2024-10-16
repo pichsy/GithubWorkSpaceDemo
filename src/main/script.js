@@ -16,15 +16,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 if (repo.name === 'xwidget') {
                     xwidgetSection.innerHTML = `
-                        <strong>Repository Name:</strong> ${repo.name}<br>
-                        <strong>Description:</strong> ${repo.description}<br>
-                        <strong>Stars:</strong> ${repo.stargazers_count}<br>
-                        <strong>Forks:</strong> ${repo.forks_count}<br>
-                        <strong>Language:</strong> ${repo.language}<br>
-                        <a href="${repo.html_url}" target="_blank">View on GitHub</a>
+                        <strong>仓库名称:</strong> ${repo.name}<br>
+                        <strong>描述:</strong> ${repo.description}<br>
+                        <strong>星标:</strong> ${repo.stargazers_count}<br>
+                        <strong>分支:</strong> ${repo.forks_count}<br>
+                        <strong>语言:</strong> ${repo.language}<br>
+                        <a href="${repo.html_url}" target="_blank">在GitHub上查看</a>
                     `;
                 }
             });
         })
-        .catch(error => console.error('Error fetching repositories:', error));
+        .catch(error => console.error('获取仓库时出错:', error));
 });

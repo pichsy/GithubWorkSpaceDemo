@@ -1,27 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Homepage</title>
+    <title>pichs</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Personal Homepage</h1>
+        <h1>欢迎来到我的个人主页</h1>
     </header>
     <section id="repositories">
-        <h2>My GitHub Public Repositories</h2>
+        <h2>我的GitHub公开仓库</h2>
         <ul id="repo-list">
             <!-- GitHub repositories will be listed here -->
         </ul>
     </section>
     <section id="xwidget">
-        <h2>About xwidget</h2>
+        <h2>关于 xwidget</h2>
         <p>
-            <!-- Detailed information about xwidget repository will be displayed here -->
+            `xwidget` 是一个强大且灵活的小部件库，旨在简化交互式Web应用程序的开发。它提供了广泛的可定制小部件，可以轻松集成到任何项目中。
+            <br><br>
+            主要特点：
+            <ul>
+                <li>易于使用和集成</li>
+                <li>高度可定制</li>
+                <li>轻量且快速</li>
+                <li>详尽的文档和支持</li>
+            </ul>
+            <br>
+            **使用方法**：
+            <br><br>
+            **安装**：
+            <pre><code>npm install xwidget</code></pre>
+            <br>
+            **基本用法**：
+            <pre><code>import { Widget } from 'xwidget';
+const myWidget = new Widget({ /* options */ });
+myWidget.render(document.getElementById('widget-container'));</code></pre>
+            <br>
+            **高级用法**：
+            <pre><code>const myWidget = new Widget({
+    color: 'blue',
+    size: 'large',
+    onClick: () => alert('Widget clicked!')
+});
+myWidget.render(document.getElementById('widget-container'));</code></pre>
+            <br>
+            **API对比**：
+            <br><br>
+            **易用性**：
+            <ul>
+                <li>`xwidget`：简单的API，清晰的文档和示例。</li>
+                <li>其他库：复杂的API，学习曲线陡峭。</li>
+            </ul>
+            <br>
+            **可定制性**：
+            <ul>
+                <li>`xwidget`：高度可定制，提供多种选项和主题。</li>
+                <li>其他库：可定制性有限。</li>
+            </ul>
+            <br>
+            **性能**：
+            <ul>
+                <li>`xwidget`：轻量且快速，优化性能。</li>
+                <li>其他库：重量级且缓慢，导致性能问题。</li>
+            </ul>
+            <br>
+            **支持**：
+            <ul>
+                <li>`xwidget`：详尽的文档，活跃的社区和定期更新。</li>
+                <li>其他库：文档和支持有限。</li>
+            </ul>
+            <br>
+            **主要特点和优势**：
+            <br><br>
+            **主要特点**：
+            <ul>
+                <li>可定制：轻松定制小部件以匹配项目的设计和需求。</li>
+                <li>响应式：小部件设计为响应式，可在不同设备和屏幕尺寸上无缝工作。</li>
+                <li>轻量：库非常轻量，确保快速加载时间和最佳性能。</li>
+                <li>模块化：`xwidget` 是模块化的，只包含所需的组件，减少臃肿并提高性能。</li>
+                <li>跨浏览器兼容性：小部件兼容所有主流浏览器，确保一致的用户体验。</li>
+            </ul>
+            <br>
+            **优势**：
+            <ul>
+                <li>提高生产力：使用 `xwidget`，可以快速创建和集成小部件，节省时间和精力。</li>
+                <li>增强用户体验：可定制和响应式的小部件提供更好的用户体验。</li>
+                <li>可扩展性：模块化设计允许根据需要轻松扩展项目，添加或删除组件。</li>
+                <li>社区支持：受益于活跃的社区和详尽的文档，帮助您充分利用 `xwidget`。</li>
+            </ul>
         </p>
-        <a href="https://github.com/pichsy/xwidget" target="_blank">Visit xwidget Repository</a>
+        <a href="https://github.com/pichsy/xwidget" target="_blank">访问 xwidget 仓库</a>
     </section>
     <script src="script.js"></script>
 </body>
